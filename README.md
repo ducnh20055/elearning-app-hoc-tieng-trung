@@ -149,82 +149,82 @@ This project is currently intended as a personal portfolio project. Add a licens
 
 ---
 
-# ELearning - Tieng Viet
+# ELearning - Tiếng Việt
 
-**Ung dung hoc tieng Trung tren di dong, uu tien luyen nghe va noi trong cac tinh huong thuc te.**
+**Ứng dụng học tiếng Trung trên di động, ưu tiên luyện nghe và nói trong các tình huống thực tế.**
 
-ELearning giup nguoi hoc luyen tieng Pho Thong qua cac bai hoc co cau truc, phan hoi phat am, bai tap nghe va hoi thoai voi AI. Day la du an portfolio minh hoa viec phat trien san pham di dong, xac thuc nguoi dung, luu tru local-first, xu ly am thanh va tich hop Supabase.
+ELearning giúp người học luyện tiếng Phổ Thông qua các bài học có cấu trúc, phản hồi phát âm, bài tập nghe và hội thoại với AI. Đây là dự án portfolio minh họa việc phát triển sản phẩm di động, xác thực người dùng, lưu trữ local-first, xử lý âm thanh và tích hợp Supabase.
 
-## Tinh nang chinh
+## Tính năng chính
 
-- Bai hoc tieng Trung duoc sap xep theo cap do HSK.
-- Bai tap nghe, trac nghiem va luyen noi.
-- Phat am tieng Trung bang text-to-speech voi `expo-speech`.
-- Thu am giong noi va chuyen am thanh thanh van ban thong qua Supabase Edge Function.
-- Cham diem phat am dua tren do tuong dong voi pinyin muc tieu.
-- Hoi thoai theo tinh huong, bao gom ca tinh huong tuy chinh duoc tao cho nguoi dung Premium.
-- Theo doi tien do bai hoc, so sao hoan thanh, thong ke luyen noi/nghe va chuoi ngay hoc theo tung tai khoan.
-- Muc tieu hoc hang ngay voi cuong do hoc tuy chon.
-- On tap cau tra loi sai va cac muc on tap theo phuong phap lap lai ngat quang.
-- Lich su phat am gan day kem ban ghi am va diem tuong dong.
-- Luu tru hoat dong theo mo hinh offline-first, co hang doi de dong bo voi Supabase.
-- Xac thuc dang nhap duoc duy tri an toan bang Supabase Auth va local storage ma hoa.
+- Bài học tiếng Trung được sắp xếp theo cấp độ HSK.
+- Bài tập nghe, trắc nghiệm và luyện nói.
+- Phát âm tiếng Trung bằng text-to-speech với `expo-speech`.
+- Thu âm giọng nói và chuyển âm thanh thành văn bản thông qua Supabase Edge Function.
+- Chấm điểm phát âm dựa trên độ tương đồng với pinyin mục tiêu.
+- Hội thoại theo tình huống, bao gồm cả tình huống tùy chỉnh được tạo cho người dùng Premium.
+- Theo dõi tiến độ bài học, số sao hoàn thành, thống kê luyện nói/nghe và chuỗi ngày học theo từng tài khoản.
+- Mục tiêu học hằng ngày với cường độ học tùy chọn.
+- Ôn tập câu trả lời sai và các mục ôn tập theo phương pháp lặp lại ngắt quãng.
+- Lịch sử phát âm gần đây kèm bản ghi âm và điểm tương đồng.
+- Lưu trữ hoạt động theo mô hình offline-first, có hàng đợi để đồng bộ với Supabase.
+- Xác thực đăng nhập được duy trì an toàn bằng Supabase Auth và local storage mã hóa.
 
-## Cac khu vuc san pham
+## Các khu vực sản phẩm
 
-### Bai hoc
+### Bài học
 
-Bai hoc ket hop gioi thieu tu vung, cau hoi am thanh, kiem tra nghe hieu, luyen phat am, phan hoi va theo doi hoan thanh. Nguoi hoc co the xem lai cau hoi da tra loi sai va cac cau hoi den han on tap.
+Bài học kết hợp giới thiệu từ vựng, câu hỏi âm thanh, kiểm tra nghe hiểu, luyện phát âm, phản hồi và theo dõi hoàn thành. Người học có thể xem lại câu hỏi đã trả lời sai và các câu hỏi đến hạn ôn tập.
 
-### Hoi thoai
+### Hội thoại
 
-Nguoi hoc luyen cac tinh huong thuc te nhu chao hoi, goi mon an, nhan phong khach san va hoi duong. Ung dung ho tro ca tin nhan van ban lan tin nhan giong noi, voi phan hoi AI duoc xu ly boi Supabase Edge Functions.
+Người học luyện các tình huống thực tế như chào hỏi, gọi món ăn, nhận phòng khách sạn và hỏi đường. Ứng dụng hỗ trợ cả tin nhắn văn bản lẫn tin nhắn giọng nói, với phản hồi AI được xử lý bởi Supabase Edge Functions.
 
-### Trang ca nhan
+### Trang cá nhân
 
-Trang ca nhan hien thi muc tieu hang ngay, chuoi ngay hoc, so ngay hoc, so cau tra loi dung, so luot hoi thoai, lich su phat am va trang thai Premium. Muc tieu duoc luu theo tung tai khoan, vi vay cac tai khoan tren cung mot thiet bi khong dung chung tien do.
+Trang cá nhân hiển thị mục tiêu hằng ngày, chuỗi ngày học, số ngày học, số câu trả lời đúng, số lượt hội thoại, lịch sử phát âm và trạng thái Premium. Mục tiêu được lưu theo từng tài khoản, vì vậy các tài khoản trên cùng một thiết bị không dùng chung tiến độ.
 
-## Cong nghe su dung
+## Công nghệ sử dụng
 
-- **Ung dung di dong:** React Native, Expo SDK 57, Expo Router
-- **Ngon ngu:** TypeScript
+- **Ứng dụng di động:** React Native, Expo SDK 57, Expo Router
+- **Ngôn ngữ:** TypeScript
 - **Backend:** Supabase Auth, PostgreSQL, Edge Functions
-- **Luu tru:** AsyncStorage cho du lieu hoc offline-first; SecureStore cho phien dang nhap
-- **Am thanh:** `expo-audio`, `expo-speech`, Supabase transcription function
-- **Giao dien:** React Native components, Expo Vector Icons, Animated APIs
-- **Kiem tra chat luong:** ESLint, TypeScript diagnostics, typed Expo Router routes
+- **Lưu trữ:** AsyncStorage cho dữ liệu học offline-first; SecureStore cho phiên đăng nhập
+- **Âm thanh:** `expo-audio`, `expo-speech`, Supabase transcription function
+- **Giao diện:** React Native components, Expo Vector Icons, Animated APIs
+- **Kiểm tra chất lượng:** ESLint, TypeScript diagnostics, typed Expo Router routes
 
-## Kien truc
+## Kiến trúc
 
 ```text
-app/                         Man hinh va tab Expo Router
-components/                  Component bai hoc, hoi thoai, xac thuc va giao dien
-constants/                   Kieu du lieu khoa hoc, tien ich noi dung va gia tri theme
-hooks/                       Hook dung lai cho state va thong ke
-lib/                         Dich vu tien do, hoat dong, on tap va kich ban
-providers/ va ctx/           State xac thuc va ho so nguoi dung
-supabase/functions/          Logic chat AI, tao kich ban, chuyen am thanh va trial
-supabase/migrations/         Schema PostgreSQL va chinh sach Row Level Security
-utils/                       Cau hinh Supabase client
+app/                         Màn hình và tab Expo Router
+components/                  Component bài học, hội thoại, xác thực và giao diện
+constants/                   Kiểu dữ liệu khóa học, tiện ích nội dung và giá trị theme
+hooks/                       Hook dùng lại cho state và thống kê
+lib/                         Dịch vụ tiến độ, hoạt động, ôn tập và kịch bản
+providers/ và ctx/           State xác thực và hồ sơ người dùng
+supabase/functions/          Logic chat AI, tạo kịch bản, chuyển âm thanh và trial
+supabase/migrations/         Schema PostgreSQL và chính sách Row Level Security
+utils/                       Cấu hình Supabase client
 ```
 
-Quy trinh hoat dong hoc tap theo mo hinh offline-first:
+Quy trình hoạt động học tập theo mô hình offline-first:
 
-1. Ung dung ghi hoat dong local theo ID cua nguoi dung dang dang nhap.
-2. Thong ke va trang thai on tap van co the su dung khi khong co mang.
-3. Hoat dong dang cho duoc dua vao hang doi local.
-4. Hang doi duoc dong bo voi Supabase khi nguoi dung dang nhap va co ket noi.
-5. Row Level Security cua Supabase gioi han du lieu theo chu so huu.
+1. Ứng dụng ghi hoạt động local theo ID của người dùng đang đăng nhập.
+2. Thống kê và trạng thái ôn tập vẫn có thể sử dụng khi không có mạng.
+3. Hoạt động đang chờ được đưa vào hàng đợi local.
+4. Hàng đợi được đồng bộ với Supabase khi người dùng đăng nhập và có kết nối.
+5. Row Level Security của Supabase giới hạn dữ liệu theo chủ sở hữu.
 
-## Bat dau
+## Bắt đầu
 
-### Yeu cau
+### Yêu cầu
 
-- Node.js 20 tro len
-- Android Studio va Android emulator, hoac mot thiet bi Android that
-- Mot Supabase project cho xac thuc, co so du lieu va Edge Functions
+- Node.js 20 trở lên
+- Android Studio và Android emulator, hoặc một thiết bị Android thật
+- Một Supabase project cho xác thực, cơ sở dữ liệu và Edge Functions
 
-### Cai dat
+### Cài đặt
 
 ```bash
 git clone https://github.com/<your-username>/<your-repository>.git
@@ -232,28 +232,28 @@ cd ELearning
 npm install
 ```
 
-Tao file `.env` o thu muc goc cua project:
+Tạo file `.env` ở thư mục gốc của project:
 
 ```env
 EXPO_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 EXPO_PUBLIC_SUPABASE_KEY=your-anon-key
 ```
 
-Khoi dong Expo development server:
+Khởi động Expo development server:
 
 ```bash
 npx expo start
 ```
 
-Tao va chay ban Android native:
+Tạo và chạy bản Android native:
 
 ```bash
 npx expo run:android
 ```
 
-### Build APK de cai truc tiep
+### Build APK để cài trực tiếp
 
-Project da co san profile EAS `preview` de tao file APK:
+Project đã có sẵn profile EAS `preview` để tạo file APK:
 
 ```bash
 npx eas-cli@latest login
@@ -261,11 +261,11 @@ npx eas-cli@latest env:push preview --path .env --force
 npx eas-cli@latest build --platform android --profile preview
 ```
 
-Sau khi build xong, mo lien ket do tren dien thoai Android de tai va cai APK. Co the can bat quyen cai ung dung tu nguon khong xac dinh cho trinh duyet.
+Sau khi build xong, mở liên kết đó trên điện thoại Android để tải và cài APK. Có thể cần bật quyền cài ứng dụng từ nguồn không xác định cho trình duyệt.
 
-## Cai dat Supabase
+## Cài đặt Supabase
 
-Ap dung migration tu thu muc goc:
+Áp dụng migration từ thư mục gốc:
 
 ```bash
 npx supabase login
@@ -273,39 +273,39 @@ npx supabase link --project-ref YOUR_PROJECT_REF
 npx supabase db push
 ```
 
-Migration learning tao cac bang hoat dong, on tap va tien do bai hoc theo nguoi dung, kem Row Level Security. Trien khai cac Edge Functions rieng theo cau hinh Supabase cua ban.
+Migration learning tạo các bảng hoạt động, ôn tập và tiến độ bài học theo người dùng, kèm Row Level Security. Triển khai các Edge Functions riêng theo cấu hình Supabase của bạn.
 
-> Khong commit `.env`, service-role key hoac bat ky thong tin dang nhap rieng tu nao.
+> Không commit `.env`, service-role key hoặc bất kỳ thông tin đăng nhập riêng tư nào.
 
-## Lenh thuong dung
+## Lệnh thường dùng
 
 ```bash
-npm run lint          # Chay Expo ESLint
-npx tsc --noEmit      # Chay TypeScript compiler ma khong tao file
-npx expo start        # Khoi dong development server
-npx expo run:android  # Build va chay ung dung Android
-npx supabase db push  # Ap dung migration cho Supabase project da lien ket
+npm run lint          # Chạy Expo ESLint
+npx tsc --noEmit      # Chạy TypeScript compiler mà không tạo file
+npx expo start        # Khởi động development server
+npx expo run:android  # Build và chạy ứng dụng Android
+npx supabase db push  # Áp dụng migration cho Supabase project đã liên kết
 ```
 
-## Ghi chu ky thuat
+## Ghi chú kỹ thuật
 
-- Noi dung khoa hoc hien duoc dong goi cung ung dung duoi dang JSON de ho tro truy cap offline on dinh.
-- Tien do nguoi dung va hoat dong hoc tap local duoc phan tach theo `user.id`.
-- Lich su phat am luu ban ghi va du lieu cham diem; client khong luu file am thanh goc.
-- Dong bo Supabase duoc thiet ke idempotent thong qua event ID do client tao.
-- Du an hien duoc cau hinh cho muc dich phat trien va portfolio; de san sang production can bo sung test tu dong, monitoring, xin consent analytics va quy trinh phat hanh chinh thuc.
+- Nội dung khóa học hiện được đóng gói cùng ứng dụng dưới dạng JSON để hỗ trợ truy cập offline ổn định.
+- Tiến độ người dùng và hoạt động học tập local được phân tách theo `user.id`.
+- Lịch sử phát âm lưu bản ghi và dữ liệu chấm điểm; client không lưu file âm thanh gốc.
+- Đồng bộ Supabase được thiết kế idempotent thông qua event ID do client tạo.
+- Dự án hiện được cấu hình cho mục đích phát triển và portfolio; để sẵn sàng production cần bổ sung test tự động, monitoring, xin consent analytics và quy trình phát hành chính thức.
 
-## Tom tat du an cho CV
+## Tóm tắt dự án cho CV
 
-> Xay dung ung dung hoc tieng Trung da nen tang voi React Native va Expo, trien khai tien do theo nguoi dung co xac thuc, luyen phat am bang am thanh, hoi thoai AI, theo doi hoat dong offline-first, on tap lap lai ngat quang va dong bo voi Supabase kem Row Level Security.
+> Xây dựng ứng dụng học tiếng Trung đa nền tảng với React Native và Expo, triển khai tiến độ theo người dùng có xác thực, luyện phát âm bằng âm thanh, hội thoại AI, theo dõi hoạt động offline-first, ôn tập lặp lại ngắt quãng và đồng bộ với Supabase kèm Row Level Security.
 
-## Lo trinh phat trien
+## Lộ trình phát triển
 
-- Them unit test va end-to-end test cho cham diem bai hoc va lich on tap.
-- Them cac view tong hop phia server cho phan tich dai han.
-- Them thong bao cho muc tieu hang ngay va cac muc den han on tap.
-- Bo sung tai lieu trien khai production cho Edge Functions va mobile build.
+- Thêm unit test và end-to-end test cho chấm điểm bài học và lịch ôn tập.
+- Thêm các view tổng hợp phía server cho phân tích dài hạn.
+- Thêm thông báo cho mục tiêu hằng ngày và các mục đến hạn ôn tập.
+- Bổ sung tài liệu triển khai production cho Edge Functions và mobile build.
 
-## Giay phep
+## Giấy phép
 
-Du an hien duoc danh cho portfolio ca nhan. Hay them license truoc khi nhan dong gop tu ben ngoai hoac phan phoi lai noi dung khoa hoc.
+Dự án hiện được dành cho portfolio cá nhân. Hãy thêm license trước khi nhận đóng góp từ bên ngoài hoặc phân phối lại nội dung khóa học.

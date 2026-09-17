@@ -5,14 +5,14 @@ import React, { useEffect } from "react";
 import { Platform, StyleSheet, View } from "react-native";
 import SystemNavigationBar from "react-native-system-navigation-bar";
 
-// Bảng màu chuẩn Duolingo Tông Cam
+
 const DUO_ORANGE = {
-  primary: "#FF5500", // Cam chính
-  activeBg: "#FFF0E6", // Nền highlight cam nhạt khi chọn tab
-  activeBorder: "#FF5500", // Viền bao quanh icon khi chọn tab
-  inactive: "#AFAFAF", // Màu icon chưa chọn
-  tabBarBg: "#FFFFFF", // Nền thanh Tab Bar
-  borderTop: "#E5E5E5", // Đường kẻ ngang phía trên thanh Tab
+  primary: "#FF5500", 
+  activeBg: "#FFF0E6", 
+  activeBorder: "#FF5500", 
+  inactive: "#AFAFAF", 
+  tabBarBg: "#FFFFFF", 
+  borderTop: "#E5E5E5",
 };
 
 export default function TabLayout() {
@@ -113,12 +113,12 @@ const styles = StyleSheet.create({
     paddingBottom: Platform.OS === "ios" ? 28 : 8,
     paddingTop: 6,
 
-    // Nền trắng phẳng chuẩn Flat Design của Duolingo
+    
     backgroundColor: DUO_ORANGE.tabBarBg,
     borderTopWidth: 2,
     borderTopColor: DUO_ORANGE.borderTop,
 
-    // Bỏ đổ bóng mờ glassmorphism
+
     elevation: 0,
     shadowOpacity: 0,
   },
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
     borderColor: "transparent",
     backgroundColor: "transparent",
   },
-  // Nền highlight cam + viền cam khi tab được kích hoạt
+  
   iconBackgroundActive: {
     backgroundColor: DUO_ORANGE.activeBg,
     borderColor: DUO_ORANGE.activeBorder,

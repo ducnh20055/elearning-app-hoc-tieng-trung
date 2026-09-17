@@ -693,7 +693,7 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     borderBottomWidth: 1,
     borderBottomColor: "#EAE5DF",
-    backgroundColor: "#FAF8F5", // Nền kem nhạt theo ảnh mẫu
+    backgroundColor: "#FAF8F5", 
   },
   headerTitle: {
     fontSize: 24,
@@ -706,13 +706,13 @@ const styles = StyleSheet.create({
   headerSubtitle: {
     fontSize: 13,
     fontWeight: "600",
-    color: "#E05305", // Màu cam chuẩn theo subtitle "Ôn tập của bạn"
+    color: "#E05305", 
   },
   scrollContainer: {
     paddingHorizontal: 20,
     paddingBottom: 115,
     paddingTop: 20,
-    backgroundColor: "#FAF8F5", // Đồng bộ nền kem toàn bộ màn hình
+    backgroundColor: "#FAF8F5", 
   },
   premiumBanner: {
     backgroundColor: Colors.primaryAccentColor || "#FF5500",
@@ -794,7 +794,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "#EAE5DF",
     borderBottomWidth: 5,
-    borderBottomColor: "#C84000", // Đáy viền cam đậm chuẩn hiệu ứng 3D trong ảnh
+    borderBottomColor: "#C84000", 
     backgroundColor: "#FFFFFF",
     padding: 16,
     justifyContent: "space-between",

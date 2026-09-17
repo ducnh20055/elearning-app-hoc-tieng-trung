@@ -287,10 +287,9 @@ export default function LessonsContent() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FAF8F5", // Màu nền kem nhạt toàn trang
+    backgroundColor: "#FAF8F5", 
   },
 
-  // --- HEADER TÔNG KEM / CAM ĐỒNG BỘ MỚI ---
   header: {
     flexDirection: "row",
     alignItems: "center",
@@ -299,20 +298,20 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     borderBottomWidth: 1,
     borderBottomColor: "#EAE5DF",
-    backgroundColor: "#FAF8F5", // Màu nền kem nhạt đồng bộ
+    backgroundColor: "#FAF8F5", 
   },
   headerTitle: {
     fontSize: 22,
     fontWeight: "800",
     fontFamily: "ui-rounded",
-    color: "#2B2B2B", // Chữ tối màu chuẩn
+    color: "#2B2B2B", 
     lineHeight: 26,
   },
   headerSubtitle: {
     fontSize: 13,
     fontWeight: "700",
     fontFamily: "ui-rounded",
-    color: "#E05305", // Màu cam chuẩn theo các màn khác
+    color: "#E05305", 
     marginTop: 2,
   },
   headerRight: {
@@ -353,7 +352,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "#EAE5DF",
     borderBottomWidth: 4,
-    borderBottomColor: "#C84000", // Đáy 3D cam
+    borderBottomColor: "#C84000", 
     minWidth: 82,
     height: 64,
   },
@@ -375,7 +374,7 @@ const styles = StyleSheet.create({
     marginTop: 1,
   },
 
-  // --- NỘI DUNG MÀN HÌNH BÀI HỌC ---
+  
   scrollContainer: {
     paddingTop: 24,
     paddingBottom: 48,

@@ -2,7 +2,7 @@
 
 **A mobile-first Chinese language learning app focused on practical listening and speaking.**
 
-ELearning helps learners practise Mandarin through structured lessons, pronunciation feedback, listening exercises, and AI-powered conversations. It is built as a portfolio project to demonstrate mobile product development, authentication, local-first data handling, audio workflows, and Supabase integration.
+ELearning helps learners practise Mandarin through structured lessons, pronunciation feedback, listening exercises, and AI-powered conversations. It is built as a project to demonstrate mobile product development, authentication, local-first data handling, audio workflows, and Supabase integration.
 
 ## Highlights
 
@@ -122,7 +122,7 @@ npx supabase db push  # Apply migrations to the linked Supabase project
 
 **Ứng dụng học tiếng Trung trên di động, ưu tiên luyện nghe và nói trong các tình huống thực tế.**
 
-ELearning giúp người học luyện tiếng Phổ Thông qua các bài học có cấu trúc, phản hồi phát âm, bài tập nghe và hội thoại với AI. Đây là dự án portfolio minh họa việc phát triển sản phẩm di động, xác thực người dùng, lưu trữ local-first, xử lý âm thanh và tích hợp Supabase.
+ELearning giúp người học luyện tiếng Phổ Thông qua các bài học có cấu trúc, phản hồi phát âm, bài tập nghe và hội thoại với AI. Đây là dự án minh họa việc phát triển sản phẩm di động, xác thực người dùng, lưu trữ local-first, xử lý âm thanh và tích hợp Supabase.
 
 ## Tính năng chính
 

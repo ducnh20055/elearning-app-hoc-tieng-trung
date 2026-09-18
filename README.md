@@ -115,17 +115,8 @@ npx tsc --noEmit      # Run the TypeScript compiler without emitting files
 npx expo start        # Start the development server
 npx expo run:android  # Build and run the Android app
 npx supabase db push  # Apply migrations to the linked Supabase project
+
 ```
-
-## Engineering Notes
-
-- Course content is currently bundled with the app as JSON for predictable offline access.
-- User progress and local learning activity are partitioned by `user.id`.
-- Pronunciation history stores transcript and scoring data; raw audio files are not persisted by the client.
-- Supabase synchronisation is designed to be idempotent through client-generated event IDs.
-- The project is currently configured for development and portfolio demonstration; production hardening would include automated tests, monitoring, analytics consent, and a formal release pipeline.
-
----
 
 # ELearning
 

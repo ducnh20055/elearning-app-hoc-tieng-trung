@@ -116,6 +116,7 @@ npx expo start        # Start the development server
 npx expo run:android  # Build and run the Android app
 npx supabase db push  # Apply migrations to the linked Supabase project
 
+
 ```
 
 # ELearning

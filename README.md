@@ -55,15 +55,8 @@ providers/ and ctx/          Authentication and profile state
 supabase/functions/          AI chat, scenario generation, transcription, and trial logic
 supabase/migrations/         PostgreSQL schema and Row Level Security policies
 utils/                       Supabase client configuration
+
 ```
-
-Learning activity follows an offline-first flow:
-
-1. The app records activity locally under the authenticated user's ID.
-2. Statistics and review state remain available without a network connection.
-3. Pending activity is placed in a local outbox.
-4. The outbox is synchronised to Supabase when the user is signed in and connectivity is available.
-5. Supabase Row Level Security limits records to their owner.
 
 ## Getting Started
 
@@ -132,24 +125,9 @@ npx supabase db push  # Apply migrations to the linked Supabase project
 - Supabase synchronisation is designed to be idempotent through client-generated event IDs.
 - The project is currently configured for development and portfolio demonstration; production hardening would include automated tests, monitoring, analytics consent, and a formal release pipeline.
 
-## CV Project Summary
-
-> Built a cross-platform Mandarin learning app with React Native and Expo, implementing authenticated user-scoped progress, audio-based pronunciation practice, AI conversation scenarios, offline-first activity tracking, spaced-repetition review, and Supabase-backed synchronisation with Row Level Security.
-
-## Roadmap
-
-- Add automated unit and end-to-end tests for lesson scoring and review scheduling.
-- Add server-side aggregate views for long-term analytics.
-- Add notifications for daily goals and review items.
-- Add production deployment documentation for Edge Functions and mobile builds.
-
-## License
-
-This project is currently intended as a personal portfolio project. Add a license before accepting external contributions or redistributing the course content.
-
 ---
 
-# ELearning - Tiếng Việt
+# ELearning
 
 **Ứng dụng học tiếng Trung trên di động, ưu tiên luyện nghe và nói trong các tình huống thực tế.**
 
@@ -207,14 +185,6 @@ supabase/functions/          Logic chat AI, tạo kịch bản, chuyển âm tha
 supabase/migrations/         Schema PostgreSQL và chính sách Row Level Security
 utils/                       Cấu hình Supabase client
 ```
-
-Quy trình hoạt động học tập theo mô hình offline-first:
-
-1. Ứng dụng ghi hoạt động local theo ID của người dùng đang đăng nhập.
-2. Thống kê và trạng thái ôn tập vẫn có thể sử dụng khi không có mạng.
-3. Hoạt động đang chờ được đưa vào hàng đợi local.
-4. Hàng đợi được đồng bộ với Supabase khi người dùng đăng nhập và có kết nối.
-5. Row Level Security của Supabase giới hạn dữ liệu theo chủ sở hữu.
 
 ## Bắt đầu
 
@@ -286,26 +256,3 @@ npx expo start        # Khởi động development server
 npx expo run:android  # Build và chạy ứng dụng Android
 npx supabase db push  # Áp dụng migration cho Supabase project đã liên kết
 ```
-
-## Ghi chú kỹ thuật
-
-- Nội dung khóa học hiện được đóng gói cùng ứng dụng dưới dạng JSON để hỗ trợ truy cập offline ổn định.
-- Tiến độ người dùng và hoạt động học tập local được phân tách theo `user.id`.
-- Lịch sử phát âm lưu bản ghi và dữ liệu chấm điểm; client không lưu file âm thanh gốc.
-- Đồng bộ Supabase được thiết kế idempotent thông qua event ID do client tạo.
-- Dự án hiện được cấu hình cho mục đích phát triển và portfolio; để sẵn sàng production cần bổ sung test tự động, monitoring, xin consent analytics và quy trình phát hành chính thức.
-
-## Tóm tắt dự án cho CV
-
-> Xây dựng ứng dụng học tiếng Trung đa nền tảng với React Native và Expo, triển khai tiến độ theo người dùng có xác thực, luyện phát âm bằng âm thanh, hội thoại AI, theo dõi hoạt động offline-first, ôn tập lặp lại ngắt quãng và đồng bộ với Supabase kèm Row Level Security.
-
-## Lộ trình phát triển
-
-- Thêm unit test và end-to-end test cho chấm điểm bài học và lịch ôn tập.
-- Thêm các view tổng hợp phía server cho phân tích dài hạn.
-- Thêm thông báo cho mục tiêu hằng ngày và các mục đến hạn ôn tập.
-- Bổ sung tài liệu triển khai production cho Edge Functions và mobile build.
-
-## Giấy phép
-
-Dự án hiện được dành cho portfolio cá nhân. Hãy thêm license trước khi nhận đóng góp từ bên ngoài hoặc phân phối lại nội dung khóa học.

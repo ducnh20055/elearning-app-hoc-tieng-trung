@@ -1,6 +1,6 @@
 # ELearning
 
-**A mobile-first Chinese language learning app focused on practical listening and speaking.**
+**A Chinese language learning app focused on practical listening and speaking.**
 
 ELearning helps learners practise Mandarin through structured lessons, pronunciation feedback, listening exercises, and AI-powered conversations. It is built as a project to demonstrate mobile product development, authentication, local-first data handling, audio workflows, and Supabase integration.
 

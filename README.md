@@ -19,7 +19,7 @@ ELearning helps learners practise Mandarin through structured lessons, pronuncia
 - Offline-first activity storage with an outbox for Supabase synchronisation.
 - Secure persisted authentication using Supabase Auth and encrypted local storage.
 
-## Product Areas
+## Main Pages
 
 ### Lessons
 
@@ -139,7 +139,7 @@ ELearning giúp người học luyện tiếng Phổ Thông qua các bài học 
 - Lưu trữ hoạt động theo mô hình offline-first, có hàng đợi để đồng bộ với Supabase.
 - Xác thực đăng nhập được duy trì an toàn bằng Supabase Auth và local storage mã hóa.
 
-## Các khu vực sản phẩm
+## Trang chính
 
 ### Bài học
 

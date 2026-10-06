@@ -118,8 +118,7 @@ npx supabase db push  # Apply migrations to the linked Supabase project
 
 
 ```
-
-# ELearning
+<details> <summary>Tiếng Việt (bấm để xem)</summary>
 
 **Ứng dụng học tiếng Trung trên di động, ưu tiên luyện nghe và nói trong các tình huống thực tế.**
 

@@ -105,8 +105,6 @@ npx supabase db push
 
 The learning migration creates user-scoped activity, review, and lesson-progress tables with Row Level Security. Deploy the Edge Functions separately according to your Supabase project setup.
 
-> Never commit `.env`, service-role keys, or other private credentials.
-
 ## Useful Commands
 
 ```bash
@@ -235,8 +233,6 @@ npx supabase db push
 ```
 
 Migration learning tạo các bảng hoạt động, ôn tập và tiến độ bài học theo người dùng, kèm Row Level Security. Triển khai các Edge Functions riêng theo cấu hình Supabase của bạn.
-
-> Không commit `.env`, service-role key hoặc bất kỳ thông tin đăng nhập riêng tư nào.
 
 ## Lệnh thường dùng
 
